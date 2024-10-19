@@ -14,7 +14,7 @@ To run this project on your machine, follow the steps below:
    
 
 ## Schema Diagram
-
+![Schema Diagram](Pizza ER Diagram.png)
 
 ## Database and Tools
 - **PostgreSQL**
