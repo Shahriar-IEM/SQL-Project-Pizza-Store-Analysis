@@ -12,7 +12,7 @@ ORDER BY o.order_date;
 -- Q2.Calculate the percentage contribution of each pizza type to total revenue.
 
 WITH pizza_sales AS(
-	SELECT p.pizza_id, SUM(p.price) AS total_sales
+	SELECT p.pizza_id, SUM(p.price * od.quantity) AS total_sales
 	FROM pizzas p
 	LEFT JOIN order_details od ON p.pizza_id = od.pizza_id
 	GROUP BY p.pizza_id
